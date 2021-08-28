@@ -1,0 +1,13 @@
+$from: 5deg;
+$to: 6deg;
+
+
+.image-stack-container {
+    > section {
+        transition: transform .5s ease-in-out;
+        transform: rotateZ($from);
+        &:hover {
+            transform: rotateZ($to);
+        }
+    }
+}

@@ -1,21 +1,19 @@
 .app-container {
     position: fixed;
     inset: 0;
-    display: flex;
-
-    section {
-        margin: auto;
-
-        &:first-of-type {
-            margin-right: 0;
-        }
-        
-        &:last-of-type {
-            margin-left: 0;
-        }
-    }
+    display: grid;
+    align-items: center;
+    justify-content: center;
 
     .title {
         font-size: 3rem;
+    }
+}
+
+.centered-app-content {
+    display: flex;
+    > section {
+        z-index: 1;
+        margin: auto;
     }
 }
